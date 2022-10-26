@@ -14,9 +14,7 @@ class PersonSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\Person::factory(10) ->create();
-
-//            \App\Models\Person::factory(10) ->create([
+//        \App\Models\Person::factory(50) ->create([
 //            'title' => 'Test Title 1',
 //            'firstname' => 'First name 1',
 //            'surname' => 'SurName 1',
@@ -26,5 +24,7 @@ class PersonSeeder extends Seeder
 //            'created_at' => now(),
 //            'updated_at' => now(),
 //        ]);
+        \App\Models\Person::factory(50) ->create();
+
     }
 }

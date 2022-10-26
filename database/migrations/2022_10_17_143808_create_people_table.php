@@ -17,12 +17,11 @@ return new class extends Migration
             $table->id();
 
             $table->string(column: 'title')->nullable();
-            $table->string(column: 'first_name');
+            $table->string(column: 'firstname');
             $table->string(column: 'surname');
             $table->text(column: 'address');
-//            $table->date(column:'date_of_birth')->nullable();
-//            $table->boolean(column: 'current');
-
+            $table->date(column:'date_of_birth')->nullable();
+            $table->boolean(column: 'current');
             $table->timestamps();
         });
     }
